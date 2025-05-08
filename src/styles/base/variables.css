@@ -1,0 +1,95 @@
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background-color);
+  --color-text: var(--text-color);
+  --color-card: var(--card-color);
+  --color-border: var(--border-color);
+  --color-text-primary: var(--text-primary);
+  --color-foreground: var(--text-foreground);
+  --color-searchbar: var(--search-bar);
+  --color-hover: var(--hover-color);
+  --color-btn-hover: var(--btn-hover);
+  --color-switch-enabled-bg: var(--switch-enabled-bg-color);
+  --color-switch-disabled-bg: var(--switch-disabled-bg-color);
+  --color-info: var(--info-color);
+  --color-info-hover: var(--info-hover);
+  --color-error: var(--error-color);
+  --color-selection-border: var(--selection-border-color);
+  --color-tool-selected-color: var(--tool-selected-color);
+  --color-dark-info-color: var(--dark-info-color);
+  --color-success-color: var(--success-color);
+  --color-body-color: var(--body-color);
+}
+
+:root {
+  --body-color: #f9fafb;
+  --selection-border-color: #ccc;
+  --background-color: #ffffff; /* Pure white background */
+  --card-color: #f6f7f8; /* Light gray for cards */
+  --text-color: #1c1c1c; /* Dark text for readability */
+  --text-foreground: rgba(28, 28, 28, 0.8); /* Subtle foreground emphasis */
+  --text-primary: #fff; /* Primary text color */
+  --border-color: #e4e6e8; /* Soft light gray borders */
+  --search-bar: #f6f7f8;
+  --success-color: #22c55e;
+  --radius: 0.5rem; /* Rounded corners */
+  --tool-selected-color: #ccc;
+  --btn-hover: #dbeeff; /* Light blue hover for buttons */
+  --hover-color: #f0f2f5; /* Subtle hover effect */
+
+  --switch-enabled-bg-color: #000;
+  --switch-disabled-bg-color: #dae0e6;
+
+  --info-color: #155dfc;
+  --info-hover: #2b7fff;
+  --error-color: #fb2c36;
+}
+[data-theme="light"] {
+  --selection-border-color: #ccc;
+  --tool-selected-color: #ccc;
+  --body-color: #f9fafb;
+  --background-color: #ffffff; /* Pure white background */
+  --card-color: #f6f7f8; /* Light gray for cards */
+  --text-color: #1c1c1c; /* Dark text for readability */
+  --text-foreground: rgba(28, 28, 28, 0.8); /* Subtle foreground emphasis */
+  --text-primary: #fff; /* Primary text color */
+  --border-color: #e4e6e8; /* Soft light gray borders */
+  --search-bar: #f6f7f8;
+  --success-color: #22c55e;
+  --radius: 0.5rem; /* Rounded corners */
+
+  --btn-hover: #dbeeff; /* Light blue hover for buttons */
+  --hover-color: #dae0e6; /* Subtle hover effect */
+
+  --switch-enabled-bg-color: #000;
+  --switch-disabled-bg-color: #dae0e6;
+
+  --info-color: #155dfc;
+  --info-hover: #2b7fff;
+  --error-color: #fb2c36;
+}
+[data-theme="dark"] {
+  --body-color: #1c1c1e;
+  --search-bar: #171c1f;
+  --text-primary: #f2f2f7;
+  --background-color: #1c1c1e;
+  --card-color: #2c2c2e;
+  --text-color: #ffff;
+  --text-foreground: #d4d4d4;
+  --btn-hover: #4a4a4c;
+  --tool-selected-color: #4b4b4d;
+  --switch-enabled-bg-color: #fff;
+  --switch-disabled-bg-color: #333d42;
+  --switch-disabled-color: #fff;
+  --selection-border-color: #6b7280;
+  --border-color: #3a3a3c;
+  --hover-color: #3a3a3a;
+  --info-hover: #51a2ff;
+  --info-color: #2b7fff;
+  --error-color: #ff6467;
+  --dark-info-color: #111827;
+  --success-color: #166534;
+}
