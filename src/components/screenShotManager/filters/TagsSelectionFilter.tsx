@@ -20,7 +20,7 @@ const TagsSelectionFilter = () => {
         onClick={() => setIsTagDropdownOpen(!isTagDropdownOpen)}
         className={cn(
           "flex items-center space-x-1 px-3 py-2 rounded-full max-sm:w-full max-sm:justify-between",
-          "border transition-all duration-200 bg-background border-border hover:bg-hover",
+          "border transition-all duration-200 bg-background border-border hover:bg-hover whitespace-nowrap",
           isTagDropdownOpen && "bg-hover",
           selectedTags.length > 0 && "border-info"
         )}
